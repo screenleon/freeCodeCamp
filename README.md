@@ -1,2 +1,0 @@
-# freeCodeCamp
-practice freeCodeCamp exam
