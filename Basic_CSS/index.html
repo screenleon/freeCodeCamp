@@ -3,7 +3,7 @@
 
 <head>
     <title>The best page ever</title>
-    <!-- <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
     <style>
         p {
             font-size: 16px;
@@ -17,6 +17,29 @@
         .red-text {
             color: red;
         }
+
+        .smaller-image {
+            width: 100px;
+        }
+
+        .thick-green-border {
+            border-width: 10px;
+            border-style: solid;
+            border-color: green;
+            border-radius: 50%;
+        }
+
+        .silver-background {
+            background-color: silver;
+        }
+
+        #cat-photo-form {
+            background-color: green;
+        }
+
+        [type='checkbox'] {
+            margin: 10px 0 15px;
+        }
     </style>
 </head>
 
@@ -25,9 +48,10 @@
     <main>
         <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
 
-        <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+        <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat"
+                alt="A cute orange cat lying on its back."></a>
 
-        <div>
+        <div class="silver-background">
             <p>Things cats love:</p>
             <ul>
                 <li>cat nip</li>
@@ -42,7 +66,7 @@
             </ol>
         </div>
 
-        <form action="/submit-cat-photo">
+        <form id="cat-photo-form" action="/submit-cat-photo">
             <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
             <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
             <label><input type="checkbox" name="personality" checked> Loving</label>
