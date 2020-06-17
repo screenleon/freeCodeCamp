@@ -1,4 +1,7 @@
 # freeCodeCamp
+#### 2020-06-17
+* Applied Visual Design finished
+
 #### 2020-06-16
 * Applied Visual Design
     * Use the CSS Transform scale Property to Scale an Element on Hover
