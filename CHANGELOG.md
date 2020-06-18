@@ -1,5 +1,6 @@
 # freeCodeCamp
 #### 2020-06-17
+* Applied Accessibility
 * Applied Visual Design finished
 
 #### 2020-06-16
