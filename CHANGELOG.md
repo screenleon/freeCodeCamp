@@ -1,5 +1,7 @@
 # freeCodeCamp
 #### 2020-06-18
+* Basic JavaScript
+    * Manipulate Arrays With push()
 * CSS Flexbox finished
 * Responsive Web Design Principles finished
 
