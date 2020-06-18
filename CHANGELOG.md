@@ -1,6 +1,9 @@
 # freeCodeCamp
+#### 2020-06-18
+* Responsive Web Design Principles finished
+
 #### 2020-06-17
-* Applied Accessibility
+* Applied Accessibility finished
 * Applied Visual Design finished
 
 #### 2020-06-16
