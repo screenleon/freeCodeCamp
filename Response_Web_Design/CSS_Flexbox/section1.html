@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .two-box>#box-container {
+            height: 500px;
+            display: flex;
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+        }
+
+        .two-box>#box-container #box-1 {
+            background-color: dodgerblue;
+            /* width: 50%;
+            height: 50%; */
+            width: 100%;
+            height: 200px;
+            flex-shrink: 1;
+        }
+
+        .two-box>#box-container #box-2 {
+            background-color: orangered;
+            /* width: 50%;
+            height: 50%; */
+            width: 100%;
+            height: 200px;
+            flex-shrink: 2;
+        }
+
+        .two-box>.fixed-height>#box-container {
+            display: flex;
+            height: 500px;
+        }
+
+        .two-box>.fixed-height>#box-container #box-1 {
+            background-color: dodgerblue;
+            height: 200px;
+        }
+
+        .two-box>.fixed-height>#box-container #box-2 {
+            background-color: orangered;
+            height: 200px;
+        }
+
+        .two-box>.fixed-height>#box-container #flex-grow-1 {
+            flex-grow: 1;
+        }
+
+        .two-box>.fixed-height>#box-container #flex-grow-2 {
+            flex-grow: 2;
+        }
+
+        .two-box>.fixed-height>#box-container #flex-basis-1 {
+            flex-basis: 10em;
+        }
+
+        .two-box>.fixed-height>#box-container #flex-basis-2 {
+            flex-basis: 20em;
+        }
+
+        .two-box>.fixed-height>#box-container #flex-1 {
+            flex: 2 2 150px;
+        }
+
+        .two-box>.fixed-height>#box-container #flex-2 {
+            flex: 1 1 150px;
+        }
+
+        .two-box>.fixed-width-height>#box-container {
+            display: flex;
+            height: 500px;
+        }
+
+        .two-box>.fixed-width-height>#box-container #box-1 {
+            background-color: dodgerblue;
+            height: 200px;
+            width: 200px;
+        }
+
+        .two-box>.fixed-width-height>#box-container #box-2 {
+            background-color: orangered;
+            height: 200px;
+            width: 200px;
+        }
+
+        .two-box>.fixed-width-height>#box-container #order1 {
+            order: 2;
+        }
+
+        .two-box>.fixed-width-height>#box-container #order-2 {
+            order: 1;
+        }
+
+        .two-box>.fixed-width-height>#box-container .align-self-1 {
+            align-self: center;
+        }
+
+        .two-box>.fixed-width-height>#box-container .align-self-2 {
+            align-self: flex-end;
+        }
+
+        body .tweet {
+            font-family: Arial, sans-serif;
+        }
+
+        .tweet header {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .tweet header .profile-thumbnail {
+            width: 50px;
+            height: 50px;
+            border-radius: 4px;
+        }
+
+        .tweet header .profile-name {
+            display: flex;
+            margin-left: 10px;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .tweet header .follow-btn {
+            display: flex;
+            margin: 0 0 0 auto;
+            align-items: center;
+        }
+
+        .tweet header .follow-btn button {
+            border: 0;
+            border-radius: 3px;
+            padding: 5px;
+        }
+
+        .tweet header h3,
+        .tweet header h4 {
+            margin: 0;
+        }
+
+        .tweet #inner p {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .tweet #inner hr {
+            margin: 20px 0;
+            border-style: solid;
+            opacity: 0.1;
+        }
+
+        .tweet footer {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .tweet footer .stats {
+            font-size: 15px;
+            display: flex;
+        }
+
+        .tweet footer .stats strong {
+            font-size: 18px;
+        }
+
+        .tweet footer .stats .likes {
+            margin-left: 10px;
+        }
+
+        .tweet footer .cta {
+            margin-left: auto;
+        }
+
+        .tweet footer .cta button {
+            border: 0;
+            background: transparent;
+        }
+
+        .gray-box #box-container {
+            background: gray;
+            display: flex;
+            height: 500px;
+            /* justify-content: center; */
+            align-items: center;
+        }
+
+        .gray-box #box-container #box-1 {
+            background-color: dodgerblue;
+            width: 25%;
+            height: 100%;
+        }
+
+        .gray-box #box-container #box-2 {
+            background-color: orangered;
+            width: 25%;
+            height: 100%;
+        }
+
+        .gray-box #box-container #box-word-1 {
+            background-color: dodgerblue;
+            width: 200px;
+            font-size: 24px;
+        }
+
+        .gray-box #box-container #box-word-2 {
+            background-color: orangered;
+            width: 200px;
+            font-size: 18px;
+        }
+
+        div.six-box {
+            height: 98vh;
+            width: 50vw;
+        }
+
+        .six-box #box-container {
+            background: gray;
+            display: flex;
+            height: 100%;
+            flex-wrap: wrap;
+        }
+
+        .six-box #box-container #box-1 {
+            background-color: dodgerblue;
+            width: 25%;
+            height: 50%;
+        }
+
+        .six-box #box-container #box-2 {
+            background-color: orangered;
+            width: 25%;
+            height: 50%;
+        }
+
+        .six-box #box-container #box-3 {
+            background-color: violet;
+            width: 25%;
+            height: 50%;
+        }
+
+        .six-box #box-container #box-4 {
+            background-color: yellow;
+            width: 25%;
+            height: 50%;
+        }
+
+        .six-box #box-container #box-5 {
+            background-color: green;
+            width: 25%;
+            height: 50%;
+        }
+
+        .six-box #box-container #box-6 {
+            background-color: black;
+            width: 25%;
+            height: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="two-box">
+        <!-- <div id="box-container">
+            <div id="box-1"></div>
+            <div id="box-2"></div>
+        </div>
+        <div class="fixed-height">
+            <div id="box-container">
+                <div id="box-1" class="flex-1"></div>
+                <div id="box-2" class="flex-2"></div>
+                <div id="box-1" class="flex-basis-1"></div>
+                <div id="box-2" class="flex-basis-2"></div>
+                <div id="box-1" class="flex-grow-1"></div>
+                <div id="box-2" class="flex-grow-2"></div>
+            </div>
+        </div> -->
+
+        <div class="fixed-width-height">
+            <div id="box-container">
+                <!-- <div id="box-1" class="order-1"></div>
+                <div id="box-2" class="order-2"></div> -->
+                <div id="box-1" class="align-self-1"></div>
+                <div id="box-2" class="align-self-2"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="gray-box">
+        <div id="box-container">
+            <div id="box-1"></div>
+            <div id="box-2"></div>
+            <div id="box-word-1">
+                <p>hello</p>
+            </div>
+            <div id="box-word-2">
+                <p>goodbye</p>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <div class="six-box">
+        <div id="box-container">
+            <div id="box-1"></div>
+            <div id="box-2"></div>
+            <div id="box-3"></div>
+            <div id="box-4"></div>
+            <div id="box-5"></div>
+            <div id="box-6"></div>
+        </div>
+    </div> -->
+
+    <!-- <div class="tweet">
+        <header>
+            <img src="https://freecodecamp.s3.amazonaws.com/quincy-twitter-photo.jpg"
+                alt="Quincy Larson's profile picture" class="profile-thumbnail">
+            <div class="profile-name">
+                <h3>Quincy Larson</h3>
+                <h4>@ossia</h4>
+            </div>
+            <div class="follow-btn">
+                <button>Follow</button>
+            </div>
+        </header>
+        <div id="inner">
+            <p>I meet so many people who are in search of that one trick that will help them work smart. Even if you
+                work smart, you still have to work hard.</p>
+            <span class="date">1:32 PM - 12 Jan 2018</span>
+            <hr>
+        </div>
+        <footer>
+            <div class="stats">
+                <div class="Retweets">
+                    <strong>107</strong> Retweets
+                </div>
+                <div class="likes">
+                    <strong>431</strong> Likes
+                </div>
+            </div>
+            <div class="cta">
+                <button class="share-btn">Share</button>
+                <button class="retweet-btn">Retweet</button>
+                <button class="like-btn">Like</button>
+            </div>
+        </footer>
+    </div> -->
+
+</body>
+
+
+</html>

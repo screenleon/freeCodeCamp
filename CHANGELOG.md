@@ -1,5 +1,6 @@
 # freeCodeCamp
 #### 2020-06-18
+* CSS Flexbox finished
 * Responsive Web Design Principles finished
 
 #### 2020-06-17
