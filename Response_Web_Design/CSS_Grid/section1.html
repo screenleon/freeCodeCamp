@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .container .d1 {
+            background: LightSkyBlue;
+        }
+
+        .container .d2 {
+            background: LightSalmon;
+        }
+
+        .container .d3 {
+            background: PaleTurquoise;
+        }
+
+        .container .d4 {
+            background: LightPink;
+        }
+
+        .container .d5 {
+            background: PaleGreen;
+        }
+
+        .container {
+            font-size: 40px;
+            width: 100%;
+            background: LightGray;
+            display: grid;
+        }
+
+        .five-div .fixed-template-column-row {
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 50px 50px;
+        }
+
+        .five-div .fixed-template-row {
+            grid-template-columns: 1fr 100px 2fr;
+            grid-template-rows: 50px 50px;
+        }
+
+        .five-div .fixed-column-gap {
+            grid-column-gap: 20px;
+        }
+
+        .five-div .fixed-row-gap {
+            grid-row-gap: 5px;
+        }
+
+        .five-div .fixed-gap {
+            grid-gap: 10px 20px;
+        }
+
+        .grid-column {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-gap: 10px;
+        }
+
+        .grid-column .d5 {
+            grid-column: 2/4;
+        }
+
+        .grid-row .d5 {
+            grid-row: 2/4;
+        }
+
+        .justify-self-center .d2 {
+            justify-self: center;
+        }
+
+        .align-self .d3 {
+            align-self: end;
+        }
+
+        .justify-items {
+            justify-items: center;
+        }
+
+        .align-items {
+            align-items: end;
+        }
+
+        .grid-template-areas {
+            grid-template-areas:
+                "header header header"
+                ". content content"
+                "footer footer footer";
+        }
+
+        .grid-template-areas .d5 {
+            grid-area: footer;
+        }
+
+        .grid-template-areas .d5 {
+            grid-area: 3/1/4/4;
+        }
+
+        .grid-column {
+            grid-template-columns: repeat(3, minmax(90px, 1fr));
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        .container.grid-column-auto-fill {
+            grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+        }
+
+        .container.grid-column-auto-fit {
+            grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        }
+    </style>
+</head>
+
+<body>
+    <div class="five-div">
+        <div class="container fixed-template-column-row fixed-gap">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+        </div>
+
+        <div class="container fixed-template-row">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+        </div>
+
+        <div class="container grid-column grid-row">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+        </div>
+
+        <div class="container fixed-template-column-row justify-self-center align-self justify-items align-items">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+        </div>
+
+        <div class="container fixed-template-column-row grid-template-areas">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+        </div>
+
+        <div class="container fixed-template-column-row grid-column-auto-fill">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+        </div>
+
+        <div class="container fixed-template-column-row grid-column-auto-fit">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+        </div>
+    </div>
+</body>
+
+</html>

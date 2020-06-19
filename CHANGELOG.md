@@ -1,4 +1,8 @@
 # freeCodeCamp
+#### 2020-06-19
+* CSS Grid finished
+* Basic JavaScript finished
+
 #### 2020-06-18
 * Basic JavaScript
     * Manipulate Arrays With push()

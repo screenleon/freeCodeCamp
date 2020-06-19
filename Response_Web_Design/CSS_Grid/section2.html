@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .four-box .container {
+            font-size: 1.5em;
+            min-height: 300px;
+            width: 100%;
+            background: LightGray;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 50px auto 1fr auto;
+            grid-gap: 10px;
+            grid-template-areas:
+                "advert header"
+                "advert content"
+                "advert footer";
+        }
+
+        .four-box .container .d1 {
+            grid-area: header;
+            background: LightSkyBlue;
+        }
+
+        .four-box .container .d2 {
+            grid-area: advert;
+            background: LightSalmon;
+        }
+
+        .four-box .container .d3 {
+            grid-area: content;
+            background: PaleTurquoise;
+        }
+
+        .four-box .container .d4 {
+            grid-area: footer;
+            background: LightPink;
+        }
+
+        @media (min-width: 400px) {
+            .container#check-width {
+                grid-template-columns: auto 1fr;
+                grid-template-rows: auto 1fr auto;
+                grid-template-areas:
+                    "advert header"
+                    "advert content"
+                    "advert footer";
+            }
+        }
+
+        @media (min-width: 500px) {
+            .container#check-width {
+                grid-template-areas:
+                    "header header"
+                    "advert content"
+                    "footer footer";
+            }
+        }
+
+        .container.content-paragraph {
+            grid-template-columns: 0fr auto;
+            grid-template-rows: 28px 1fr 0fr auto;
+        }
+
+        .itemOne {
+            background: PaleGreen;
+        }
+
+        .itemTwo {
+            background: BlanchedAlmond;
+        }
+
+        .content-paragraph .d3 {
+            display: grid;
+            grid-template-columns: auto 1fr;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="four-box">
+        <div id="check-width" class="container">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+        </div>
+
+        <div class="container content-paragraph">
+            <div class="d1">header</div>
+            <div class="d2">advert</div>
+            <div class="d3">
+                <div class="itemOne">paragraph1</div>
+                <div class="itemTwo">paragraph2</div>
+            </div>
+            <div class="d4">footer</div>
+        </div>
+    </div>
+</body>
+
+</html>
