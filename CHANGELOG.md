@@ -1,4 +1,9 @@
 # freeCodeCamp
+#### 2020-06-20
+* ES6 finished
+* Response Web Design Projects
+    * Build a Tribute Page with simple style
+
 #### 2020-06-19
 * CSS Grid finished
 * Basic JavaScript finished
