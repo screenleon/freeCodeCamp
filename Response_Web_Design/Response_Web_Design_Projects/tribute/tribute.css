@@ -3,9 +3,17 @@ body {
     margin: 0;
     padding: 0;
     font-size: 14px;
+    font-family: sans-serif;
 }
 
-#main {}
+#main {
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    height: 8em;
+}
 
 #img-div {
     display: grid;
@@ -18,7 +26,6 @@ body {
 }
 
 #image {
-    /* justify-self: center; */
     width: 30%;
     grid-area: img-image;
 }
@@ -30,4 +37,24 @@ body {
 #tribute-info {
     line-height: 0em;
     grid-area: img-description;
+}
+
+#footer {
+    width: auto;
+    text-align: center;
+}
+
+a {
+    color: blue;
+}
+
+a:hover {
+    color: skyblue;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 4em;
+    margin: 0;
+    padding: 0;
 }
