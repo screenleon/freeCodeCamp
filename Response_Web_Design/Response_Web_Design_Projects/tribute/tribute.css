@@ -11,7 +11,7 @@ body {
     text-align: center;
 }
 
-header {
+header#title {
     height: 8em;
 }
 
@@ -20,23 +20,35 @@ header {
     background-color: #FFFFFF;
     justify-items: center;
     margin: 0 auto;
+    padding: 1em 0;
     width: 90%;
     height: 40%;
     grid-template-areas: "img-image" "img-description";
 }
 
 #image {
+    align-content: center;
     width: 30%;
     grid-area: img-image;
 }
 
 #img-div h6 {
     display: inline-block;
+    line-height: 0em;
 }
 
 #tribute-info {
     line-height: 0em;
     grid-area: img-description;
+}
+
+#content header {
+    /* line-height: 5em; */
+    margin: 3em auto;
+}
+
+#content ul {
+    list-style-position: inside;
 }
 
 #footer {
@@ -57,4 +69,8 @@ h1 {
     font-size: 4em;
     margin: 0;
     padding: 0;
+}
+
+article ul {
+    text-align: justify;
 }
