@@ -1,4 +1,7 @@
 # freeCodeCamp
+#### 2020-06-22
+* Regular Expressions finished
+
 #### 2020-06-20
 * ES6 finished
 * Response Web Design Projects
