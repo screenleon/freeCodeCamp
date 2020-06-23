@@ -1,4 +1,14 @@
 # freeCodeCamp
+#### 2020-06-23
+* Front End Libraries
+    * bootstrap
+        * Ditch Custom CSS for Bootstrap finished
+* Response Web Design
+    * Response Web Design Projects
+        * Build a Survey Form finished with simple style
+* JavaScript Algorithms and Data Structures
+    * Basic Data Structure finished
+
 #### 2020-06-22
 * Response Web Design Projects
     * Build a Survey Form
