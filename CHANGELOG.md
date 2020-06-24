@@ -1,4 +1,11 @@
 # freeCodeCamp
+#### 2020-06-24
+* Front End Libraries
+    * jQuery finished
+    * bootstrap finished
+* JavaScript Algorithms and Data Structures
+    * Basic Algorithm Scripting finished
+
 #### 2020-06-23
 * Front End Libraries
     * bootstrap
