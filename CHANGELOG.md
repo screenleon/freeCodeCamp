@@ -1,4 +1,10 @@
 # freeCodeCamp
+#### 2020-06-29
+* JavaScript Algorithms and Data Structures
+    * Object Oriented Programming finished
+* Front End Libraries
+    * Scss finished
+
 #### 2020-06-24
 * Front End Libraries
     * jQuery finished
