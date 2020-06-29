@@ -1,0 +1,15 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "sass": "^1.26.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "scss": "sass section01.scss section01.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

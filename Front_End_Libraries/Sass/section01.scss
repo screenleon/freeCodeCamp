@@ -1,0 +1,119 @@
+.store-data {
+    $text-color: red;
+
+    .header {
+        text-align: center;
+    }
+
+    .blog-post,
+    h2 {
+        color: $text-color;
+    }
+}
+
+.nest-css {
+    .blog-post {
+        h1 {
+            text-align: center;
+            color     : blue;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius   : $radius;
+    -ms-border-radius    : $radius;
+    border-radius        : $radius;
+}
+
+#awesome {
+    width           : 150px;
+    height          : 150px;
+    background-color: green;
+    @include border-radius(15px);
+}
+
+@mixin border-stroke($val) {
+    @if $val==light {
+        border: 1px solid black;
+    }
+
+    @else if $val==medium {
+        border: 3px solid black;
+    }
+
+    @else if $val==heavy {
+        border: 6px solid black;
+    }
+
+    @else {
+        border: none;
+    }
+}
+
+#box {
+    width           : 150px;
+    height          : 150px;
+    background-color: red;
+    @include border-stroke(medium);
+}
+
+.for {
+    @for $index from 1 to 6 {
+        .text-#{"" + $index} {
+            font-size: 15px * $index;
+        }
+    }
+}
+
+.three-bg {
+    $colors: (blue: blue, black: black, red: red);
+
+    @each $key,
+    $color in $colors {
+        .#{"" + $key}-bg {
+            background-color: $color;
+        }
+    }
+
+    div {
+        height: 200px;
+        width : 200px;
+    }
+}
+
+.while {
+    $index: 1;
+
+    @while $index < 6 {
+        .text-#{"" + $index} {
+            font-size: 15px * $index;
+        }
+
+        $index: $index+1;
+    }
+}
+
+.post {
+    h3 {
+        text-align: center;
+    }
+
+    .info {
+        width : 200px;
+        border: 1px solid black;
+        margin: 0 auto;
+    }
+
+    .info-important {
+        @extend .info;
+        background-color: magenta;
+    }
+}
+
+// @import './example.scss'
