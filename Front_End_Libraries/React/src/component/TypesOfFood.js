@@ -1,10 +1,23 @@
 import React from 'react';
 import * as serviceWorker from '../serviceWorker';
 
-const TypesOfFruit = () => {
+// const TypesOfFruit = () => {
+//     return (
+//         <div>
+//             <ul>
+//                 <li>Apples</li>
+//                 <li>Blueberries</li>
+//                 <li>Strawberries</li>
+//                 <li>Bananas</li>
+//             </ul>
+//         </div>
+//     );
+// };
+
+const NonCitrus = () => {
     return (
         <div>
-            <h2>Fruits:</h2>
+            <h3>NonCitrus:</h3>
             <ul>
                 <li>Apples</li>
                 <li>Blueberries</li>
@@ -15,12 +28,39 @@ const TypesOfFruit = () => {
     );
 };
 
+const Citrus = () => {
+    return (
+        <div>
+            <h3>Citus:</h3>
+            <ul>
+                <li>Lemon</li>
+                <li>Lime</li>
+                <li>Orange</li>
+                <li>Grapefruit</li>
+            </ul>
+        </div>
+    );
+};
+
 const Fruits = () => {
     return (
         <div>
-            { /* change code below this line */}
-            <TypesOfFruit />
-            { /* change code above this line */}
+            <h2>Fruits:</h2>
+            <NonCitrus />
+            <Citrus />
+        </div>
+    );
+};
+
+const Vegetables = () => {
+    return (
+        <div>
+            <h2>Vegetables:</h2>
+            <ul>
+                <li>Cucumber</li>
+                <li>Tomato</li>
+                <li>Legume</li>
+            </ul>
         </div>
     );
 };
@@ -34,9 +74,8 @@ class TypesOfFood extends React.Component {
         return (
             <div>
                 <h1>Types of Food:</h1>
-                { /* change code below this line */}
                 <Fruits />
-                { /* change code above this line */}
+                <Vegetables />
             </div>
         );
     }

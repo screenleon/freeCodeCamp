@@ -2,9 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
-import MyComponent from './MyComponent';
+import MyComponent from './component/MyComponent';
 import ParentComponent from './ParentComponent';
-import TypesOfFood from './component/TypesOfFood'
+import TypesOfFood from './component/TypesOfFood';
+import MyComponent02 from './component/MyComponent02';
+import Calendar from './component/Calendar';
 
 import * as serviceWorker from './serviceWorker';
 
@@ -24,11 +26,9 @@ const JSX01 = (
 
 const JSX02 = (
   <div>
-    {/* remove comment and change code below this line*/}
     <h2>Welcome to React!</h2> <br />
     <p>Be sure to close all tags!</p>
     <hr />
-    {/* remove comment and change code above this line */}
   </div>
 );
 
@@ -44,7 +44,8 @@ const MyComponentFunction = function () {
 const display = (
   <div>
     <ParentComponent />
-    <TypesOfFood />
+    <MyComponent02 />
+    <Calendar />
   </div>
 );
 
@@ -56,7 +57,7 @@ const display = (
 // );
 
 ReactDOM.render(
-  [hello, JSX01, JSX02, MyComponentFunction(), display],
+  [hello, JSX01, JSX02, MyComponentFunction(), display, <TypesOfFood />],
   document.getElementById('root')
 );
 
