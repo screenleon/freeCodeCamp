@@ -1,4 +1,8 @@
 # freeCodeCamp
+#### 2020-07-02
+* Information Security and Quality Assurance
+    * Quality Assurance adn Testing with Chai finished
+
 #### 2020-07-01
 * Front End Libraries
     * React
