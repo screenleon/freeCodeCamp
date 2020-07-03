@@ -1,0 +1,17 @@
+{
+  "name": "managing_packages_with_npm",
+  "version": "1.0.0",
+  "description": "A project that does something awesome",
+  "main": "index.js",
+  "dependencies": {
+    "moment": "^2.x.x"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "freeCodeCamp"
+  ],
+  "author": "Lien Chen",
+  "license": "MIT"
+}
