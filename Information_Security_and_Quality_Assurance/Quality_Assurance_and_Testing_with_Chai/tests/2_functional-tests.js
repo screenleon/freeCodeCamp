@@ -208,30 +208,30 @@ suite('Functional Tests', function () {
       // Did it ? Ok. Let's see how to automate the process...
 
       // ### EXAMPLE ###
-      test('#example - submit the input "surname" : "Polo"', function (done) {
+      test('#example - submit the input "surname" : "Polo"', function () {
         browser
           .fill('surname', 'Polo')
-          .pressButton('submit', function () {
-            // pressButton is ## Async ##.  
-            // It waits for the ajax call to complete...
+          .then(() => {
+            browser.pressButton('submit', function () {
+              // pressButton is ## Async ##.  
+              // It waits for the ajax call to complete...
 
-            // assert that status is OK 200
-            browser.assert.success();
-            // assert that the text inside the element 'span#name' is 'Marco'
-            browser.assert.text('span#name', 'Marco');
-            // assert that the text inside the element 'span#surname' is 'Polo'
-            browser.assert.text('span#surname', 'Polo');
-            // assert that the element(s) 'span#dates' exist and their count is 1
-            browser.assert.element('span#dates', 1);
-
-            done();   // It's an async test, so we have to call 'done()''
-          });
+              // assert that status is OK 200
+              browser.assert.success();
+              // assert that the text inside the element 'span#name' is 'Marco'
+              browser.assert.text('span#name', 'Marco');
+              // assert that the text inside the element 'span#surname' is 'Polo'
+              browser.assert.text('span#surname', 'Polo');
+              // assert that the element(s) 'span#dates' exist and their count is 1
+              browser.assert.element('span#dates', 1);
+              return;
+            });
+            return;
+          })
       });
-
       /** Now it's your turn. Please don't use the keyword #example in the title. **/
 
-      test('submit "surname" : "Colombo" - write your e2e test...', function (done) {
-
+      test('submit "surname" : "Colombo" - write your e2e test...', function () {
         // fill the form...
         // then submit it pressing 'submit' button.
         //
@@ -242,36 +242,38 @@ suite('Functional Tests', function () {
         // assert that the element(s) 'span#dates' exist and their count is 1
         browser
           .fill('surname', 'Colombo')
-          .pressButton('submit', function () {
-
-            /** YOUR TESTS HERE, Don't forget to remove assert.fail() **/
-
-            // pressButton is Async.  Waits for the ajax call to complete...
-            browser.assert.success();
-            // assert that status is OK 200
-            browser.assert.text('span#name', 'Cristoforo');
-            // assert that the text inside the element 'span#name' is 'Cristoforo'
-            browser.assert.text('span#surname', 'Colombo');
-            // assert that the text inside the element 'span#surname' is 'Colombo'
-            browser.assert.element('span#dates', 1)
-            // assert that the element(s) 'span#dates' exist and their count is 1
-
-            done();   // It's an async test, so we have to call 'done()''
-          });
-        // 
+          .then(() => {
+            browser.pressButton('submit', function () {
+              /** YOUR TESTS HERE, Don't forget to remove assert.fail() **/
+              // pressButton is Async.  Waits for the ajax call to complete...
+              browser.assert.success();
+              // assert that status is OK 200
+              browser.assert.text('span#name', 'Cristoforo');
+              // assert that the text inside the element 'span#name' is 'Cristoforo'
+              browser.assert.text('span#surname', 'Colombo');
+              // assert that the text inside the element 'span#surname' is 'Colombo'
+              browser.assert.element('span#dates', 1)
+              // assert that the element(s) 'span#dates' exist and their count is 1
+              return;
+            });
+            return;
+          })
       });
 
       /** Try it again... No help this time **/
-      test('submit "surname" : "Vespucci" - write your e2e test...', function (done) {
+      test('submit "surname" : "Vespucci" - write your e2e test...', function () {
         browser
           .fill('surname', 'Vespucci')
-          .pressButton('submit', function () {
-            browser.assert.success();
-            browser.assert.text('span#name', 'Amerigo');
-            browser.assert.text('span#surname', 'Vespucci');
-            browser.assert.element('span#dates', 1);
+          .then(() => {
+            browser.pressButton('submit', function () {
+              browser.assert.success();
+              browser.assert.text('span#name', 'Amerigo');
+              browser.assert.text('span#surname', 'Vespucci');
+              browser.assert.element('span#dates', 1);
+              return;
+            })
+            return;
           })
-        done();
       });
     });
   });

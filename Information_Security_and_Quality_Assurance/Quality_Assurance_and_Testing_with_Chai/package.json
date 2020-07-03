@@ -33,6 +33,7 @@
 	],
 	"license": "MIT",
 	"devDependencies": {
+		"core-js": "^3.6.5",
 		"nodemon": "^2.0.4"
 	}
 }
