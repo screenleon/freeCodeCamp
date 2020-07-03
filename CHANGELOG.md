@@ -1,4 +1,10 @@
 # freeCodeCamp
+#### 2020-07-03
+* APIs and Microservices
+    * Basic Node and Express finished
+    * MongoDB and Mongoose
+        * Perform Classic Updates by Running Find, Edit, then Save finished
+
 #### 2020-07-02
 * Information Security and Quality Assurance
     * Quality Assurance adn Testing with Chai finished
