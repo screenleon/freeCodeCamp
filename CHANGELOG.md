@@ -1,4 +1,10 @@
 # freeCodeCamp
+#### 2020-07-06
+* APIs and Microservices
+    * MongoDB and Mongoose finished
+    * APIs and Microservices Projects
+        * Timestamp Microservices finished
+
 #### 2020-07-03
 * APIs and Microservices
     * Basic Node and Express finished
