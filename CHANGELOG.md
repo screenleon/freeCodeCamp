@@ -1,4 +1,9 @@
 # freeCodeCamp
+#### 2020-07-07
+* APIs and Microservices
+    * APIs and Microservices Projects
+        * URL Shortener Microservice finished
+
 #### 2020-07-06
 * APIs and Microservices
     * MongoDB and Mongoose finished
