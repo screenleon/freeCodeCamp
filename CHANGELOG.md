@@ -1,4 +1,9 @@
 # freeCodeCamp
+#### 2020-07-09
+* Front End Libraries
+    * React
+        * Add Event Listeners finished
+
 #### 2020-07-08
 * APIs and Microservices
     * APIs and Microservices Projects finished
