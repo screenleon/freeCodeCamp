@@ -7,7 +7,8 @@ import ParentComponent from './ParentComponent';
 import TypesOfFood from './component/TypesOfFood';
 import MyComponent02 from './component/MyComponent02';
 import Calendar from './component/Calendar';
-
+import { ToDoList, ShoppingCart, ResetPassword, CampSite, StatefulComponent, MyApp, MyComponent06 } from './component/index';
+import { MyComponent03, MyConponent04, MyConponent05, Counter, ControlledInput, MyForm } from './component/index';
 import * as serviceWorker from './serviceWorker';
 
 const hello = <h1>Hello JSX</h1>;
@@ -56,8 +57,21 @@ const display = (
 //   document.getElementById('root')
 // );
 
+// const ShoppingCart = (props) => {
+//   return (
+//     <div>
+//       <h1>Shopping Cart Component</h1>
+//     </div>
+//   )
+// };
+// ShoppingCart.defaultProps = {item: 0};
+
 ReactDOM.render(
-  [hello, JSX01, JSX02, MyComponentFunction(), display, <TypesOfFood />],
+  [hello, JSX01, JSX02, MyComponentFunction(), display, <TypesOfFood />,
+    <ToDoList />, <ShoppingCart />, <ResetPassword />, <CampSite />,
+    <StatefulComponent />, <MyComponent03 />, <MyConponent04 />, <MyConponent05 />,
+    <Counter />, <ControlledInput />, <MyForm />, <MyApp />, <MyComponent06 />
+  ],
   document.getElementById('root')
 );
 

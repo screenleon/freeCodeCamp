@@ -9,19 +9,15 @@ const CurrentDate = (props) => {
     );
 };
 
-class Calendar extends React.Component {
-    constructor(props) {
-        super(props);
-    }
+export default class Calendar extends React.Component {
     render() {
         return (
             <div>
                 <h3>What date is it?</h3>
-                <CurrentDate date={Date()}/>
+                <CurrentDate date={Date()} />
             </div>
         );
     }
 };
 
 serviceWorker.unregister();
-export default Calendar;

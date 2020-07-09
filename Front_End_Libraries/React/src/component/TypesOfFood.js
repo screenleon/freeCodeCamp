@@ -66,10 +66,6 @@ const Vegetables = () => {
 };
 
 class TypesOfFood extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div>
