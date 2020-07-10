@@ -7,9 +7,11 @@ import ParentComponent from './ParentComponent';
 import TypesOfFood from './component/TypesOfFood';
 import MyComponent02 from './component/MyComponent02';
 import Calendar from './component/Calendar';
-import { ToDoList, ShoppingCart, ResetPassword, CampSite, StatefulComponent, MyApp, MyComponent06 } from './component/index';
+import { Colorful, MagicEightBall, MyComponent07, CheckUserAge, GameOfChance, GateKeeper, MyToDoList, MyComponent08 } from './component/index';
+import { ToDoList, ShoppingCart, ResetPassword, CampSite, StatefulComponent, MyApp, MyComponent06, Controller } from './component/index';
 import { MyComponent03, MyConponent04, MyConponent05, Counter, ControlledInput, MyForm } from './component/index';
 import * as serviceWorker from './serviceWorker';
+import { Frameworks } from './Frameworks';
 
 const hello = <h1>Hello JSX</h1>;
 const JSX01 = (
@@ -70,7 +72,9 @@ ReactDOM.render(
   [hello, JSX01, JSX02, MyComponentFunction(), display, <TypesOfFood />,
     <ToDoList />, <ShoppingCart />, <ResetPassword />, <CampSite />,
     <StatefulComponent />, <MyComponent03 />, <MyConponent04 />, <MyConponent05 />,
-    <Counter />, <ControlledInput />, <MyForm />, <MyApp />, <MyComponent06 />
+    <Counter />, <ControlledInput />, <MyForm />, <MyApp />, <MyComponent06 />,
+    <Controller />, <Colorful />, <MagicEightBall />, <MyComponent07 />, <CheckUserAge />,
+    <GameOfChance />, <GateKeeper />, <MyToDoList />, Frameworks(), <MyComponent08 />
   ],
   document.getElementById('root')
 );
