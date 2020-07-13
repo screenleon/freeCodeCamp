@@ -1,4 +1,9 @@
 # freeCodeCamp
+#### 2020-07-13
+* Front End Libraries
+    * Redux
+        * Use Middleware to Handle Asynchronous Actions finished
+
 #### 2020-07-10
 * Front End Libraries
     * React finished
