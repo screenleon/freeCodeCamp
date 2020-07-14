@@ -1,7 +1,7 @@
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import * as Redux from 'redux';
-import * as ReduxThunk from  'redux-thunk';
+import * as ReduxThunk from 'redux-thunk';
 
 const reducer = (state = 5) => {
   return state;
