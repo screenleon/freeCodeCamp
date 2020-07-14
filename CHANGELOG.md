@@ -1,4 +1,12 @@
 # freeCodeCamp
+#### 2020-07-14
+* Scientific Computing with Python
+    * Python for Everybody finished
+    * Scientific Computing with Python Projects
+        * Arithmetic_Formatter finished
+* Front End Libraries
+    * Redux finished
+
 #### 2020-07-13
 * Front End Libraries
     * Redux
