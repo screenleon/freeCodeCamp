@@ -1,4 +1,11 @@
 # freeCodeCamp
+#### 2020-07-15
+* Front End Libraries
+    * React and Redux finished
+* Quality Assurance
+    * Advanced Node and Express
+        * How to Use Passport Strategies finished
+
 #### 2020-07-14
 * Scientific Computing with Python
     * Python for Everybody finished
@@ -44,7 +51,7 @@
 
 #### 2020-07-02
 * Information Security and Quality Assurance
-    * Quality Assurance adn Testing with Chai finished
+    * Quality Assurance and Testing with Chai finished
 
 #### 2020-07-01
 * Front End Libraries
