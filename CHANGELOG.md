@@ -1,4 +1,9 @@
 # freeCodeCamp
+#### 2020-07-16
+* Quality Assurance
+    * Advanced Node and Express
+        * Implementation of Social AuthenticationIII finished
+
 #### 2020-07-15
 * Front End Libraries
     * React and Redux finished
