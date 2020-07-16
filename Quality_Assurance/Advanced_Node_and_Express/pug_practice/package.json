@@ -12,12 +12,13 @@
     "start:dev": "nodemon server.js"
   },
   "dependencies": {
+    "bcrypt": "^3.0.8",
     "cors": "^2.8.1",
     "dotenv": "^8.2.0",
     "express": "^4.16.1",
     "express-session": "^1.17.1",
     "install": "^0.13.0",
-    "mongodb": "^3.5.9",
+    "mongodb": "^2.2.36",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
     "pug": "^3.0.0"
