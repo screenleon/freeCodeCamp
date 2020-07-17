@@ -4,7 +4,6 @@ module.exports = function (app) {
             res.json({ message: 'test' });
         });
 
-
     app.route('/api/convert')
         .get(ConvertUnit);
 
@@ -85,5 +84,4 @@ module.exports = function (app) {
 
         res.json(output);
     }
-
 }

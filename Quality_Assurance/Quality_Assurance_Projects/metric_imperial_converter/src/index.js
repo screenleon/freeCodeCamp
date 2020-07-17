@@ -14,9 +14,3 @@ const server = app.listen(process.env.PORT || 3000, (err) => {
 })
 
 routers(app);
-
-// app.route('/api/convert')
-//     .get((req, res) => {
-//         console.log(req.query)
-
-//     })
