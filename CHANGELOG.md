@@ -1,4 +1,9 @@
 # freeCodeCamp
+* Quality Assurance
+    * Advanced Node and Express finished
+    * Quality Assurance Projects
+        * Metric/Imp Converter finished
+
 #### 2020-07-16
 * Quality Assurance
     * Advanced Node and Express
