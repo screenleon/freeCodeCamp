@@ -37,7 +37,8 @@ io.use(passportSocketIo.authorize({
   store: sessionStore
 }));
 
-mongo.connect(process.env.DATABASE, (err, db) => {
+mongo.connect(process.env.DATABASE, { useUnifiedTopology: true }, (err, client) => {
+  const db = client.db('freeCodeCamp');
   if (err) console.log('Database error: ' + err);
 
   auth(app, db);
