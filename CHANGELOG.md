@@ -1,4 +1,10 @@
 # freeCodeCamp
+#### 2020-07-20
+* Quality Assurance
+    * Quality Assurance Projects
+        * Personal Library finished
+
+#### 2020-07-17
 * Quality Assurance
     * Advanced Node and Express finished
     * Quality Assurance Projects
