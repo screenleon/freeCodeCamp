@@ -87,7 +87,6 @@ const deleteIssue = function (project_name, _id) {
             if (!project) throw new Error('Not found Project');
             return IssueModel.findByIdAndDelete({ _id }).exec();
         })
-
 }
 
 module.exports = { postIssue, getIssues, deleteIssue, updateIssue };
