@@ -1,4 +1,9 @@
 # freeCodeCamp
+#### 2020-07-21
+* Quality Assurance
+    * Quality Assurance Projects
+        * Sudoku Solver method testing
+
 #### 2020-07-20
 * Quality Assurance
     * Quality Assurance Projects
