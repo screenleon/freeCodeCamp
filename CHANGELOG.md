@@ -1,4 +1,12 @@
 # freeCodeCamp
+#### 2020-07-22
+* Data Visualization
+    * Data Visualization with D3
+        * Add Labels to Scatter Plot Circles finished
+* Quality Assurance
+    * Quality Assurance Projects
+        * Sudoku Solver with high probability of Error, use too much time. Stop to write
+
 #### 2020-07-21
 * Quality Assurance
     * Quality Assurance Projects
