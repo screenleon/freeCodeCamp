@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>D3</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.1.1/d3.js"></script>
+    <style>
+        .bar {
+            width: 25px;
+            height: 100px;
+            margin: 2px;
+            display: inline-block;
+            background-color: blue;
+        }
+
+        .bar:hover {
+            fill: brown;
+        }
+
+        svg {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li>Example</li>
+        <li>Example</li>
+        <li>Example</li>
+    </ul>
+    <script>
+        d3.select('body').append('h1').text('Learning D3');
+        d3.selectAll('li').text('list item');
+
+        const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
+        const w = 500;
+        const h = 100;
+
+        d3.select('body').selectAll('h2')
+            .data(dataset)
+            .enter()
+            .append('h2')
+            .text(dollar => dollar.toString() + ' New Title')
+            .style('font-family', 'verdana')
+            .style('color', (dollar) => dollar > 20 ? 'green' : 'red')
+
+        d3.select("body").selectAll("div")
+            .data(dataset)
+            .enter()
+            .append("div")
+            .attr('class', 'bar')
+            .style('height', (data) => (data * 10).toString() + 'px')
+
+
+        const svg = d3.select("body")
+            .append("svg")
+            .attr("width", w)
+            .attr("height", h)
+        // .style('width', w)
+        // .style('height', h)
+
+        svg.selectAll('rect')
+            .data(dataset)
+            .enter()
+            .append('rect')
+            .attr('width', 25)
+            .attr('height', (data) => data * 3)
+            .attr('x', (data, index) => index * 30)
+            .attr('y', (data) => h - data * 3)
+            .attr('fill', 'navy')
+            .attr('class', 'bar');
+
+        svg.selectAll('title')
+            .data(dataset)
+            .enter()
+            .append('title')
+            .text(data => data);
+
+        svg.selectAll('text')
+            .data(dataset)
+            .enter()
+            .append('text')
+            .text(data => data)
+            .attr("x", (d, i) => i * 30)
+            .attr('y', data => h - data * 3 - 3)
+            .attr('fill', 'red')
+            .attr('font-size', 25)
+    </script>
+</body>
+
+</html>
