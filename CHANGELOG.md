@@ -1,4 +1,9 @@
 # freeCodeCamp
+#### 2020-07-23
+* Data Visualization
+    * JSON APIs and Ajax finished
+    * Data Visualization with D3 finished
+
 #### 2020-07-22
 * Data Visualization
     * Data Visualization with D3
